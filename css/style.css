@@ -1,63 +1,38 @@
-* {
+* 
+{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body {
+body
+{
     font-family: 'Work Sans', sans-serif;
     word-spacing: 5px;
+    font-size: 18px;
 }
-.container {
-    width: 1200px;
+.container 
+{
+    width: 80%;
     margin: 0 auto;
 }
-:root {
+:root 
+{
     --main-color: #f6f6f6;
     --padding-size: 60px;
 }
 /* start Global Components   */
-.special-heading+p {
+.special-heading+p
+{
     margin: -30px 0 0;
     color: #6f7780;
     text-align: center;
     font-size: 1.4rem;
 }
+
+
 /* end Global Components  */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 600px;
-        margin: 0 auto;
-    }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .container {
-        width: 767px;
-        margin: 0 auto;
-    }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .container {
-        width: 991px;
-        margin: 0 auto;
-    }
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .container {
-        width: 1199px;
-        margin: 0 auto;
-    }
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-        margin: 0 auto;
-    }
-}
+
 /* responsive for container */
 /* start nav */
 nav {
@@ -128,7 +103,83 @@ nav .links ul li a:hover {
     color: rgb(197 238 255);
     padding-left: 10px;
 }
+
 /* end of navbar */
+/* start responsive navbar */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+.container
+{
+    width: 100%;
+}
+nav .container
+{
+    width: 100%;
+}
+nav .links ul li a 
+{
+    font-size: 0.9rem;
+}  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+{
+    .container
+{
+    width: 95%;
+}
+nav .container
+{
+    width: 95%;
+}
+nav .links ul li a 
+{
+    font-size: 1.0rem;
+}  
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    .container
+    {
+        width: 90%;
+    }
+    nav .container
+    {
+        width: 90%;
+    }
+    nav .links ul li a 
+    {
+        font-size: 1.1rem;
+    }    
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+    
+    .container
+    {
+        width: 80%;
+    }
+    nav .container
+    {
+        width: 80%;
+    }
+    nav .links ul li a 
+    {
+        font-size: 1.2rem;
+    }  
+}
+
+/* end of responsive navbar */
+
+
 /* start of header */
 header {
     width: 100%;
@@ -144,6 +195,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 100%;
+    text-align: center;
 }
 .caption-header h2,
 .caption-header h4 {
@@ -153,28 +205,73 @@ header {
     font-style: bold;
 }
 /* end header  */
+
+
+
 /* responsive */
-@media only screen and (max-width: 600px) {
-    nav .logo {
-    width: 40px
-    }
-    nav .links .icons-links {
-    width: 20px;
-    }
-    nav .links ul li a {
-    font-size: 17px;
-    }
+
+/* start responsive header */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
     .caption-header h2,
     .caption-header h4 {
-    margin: 5px 0px;
-    font-size: 23px;
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+{
+    .caption-header h2,
+    .caption-header h4 
+    {
+        font-size: 1.3rem;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    .caption-header h2,
+    .caption-header h4 {
+        font-size: 1.4rem;
     }
 }
-/* end responsive of header and nav  */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+    .caption-header h2,
+    .caption-header h4 {
+        font-size: 1.5rem;
+    }
+}
+
+/* end of responsive header */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* start of seacton 2 is called features */
 .features {
     padding-top: var(--padding-size);
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     background-color: var(--main-color);
 }
 .features .container {
@@ -188,8 +285,8 @@ header {
 }
 .features .container .feat i {
     color: #3a6b7c;
-    margin: 30px 0px;
-    font-size: 48px;
+    margin: 1.4rem 0px;
+    font-size: 1.6rem;
     transition: 0.5s transform;
 }
 .features .container .feat i:hover {
@@ -201,14 +298,17 @@ header {
 .features .container .feat h3,
 .features .container .feat p {
 
-    margin: calc(var(--padding-size) / 2 + 4px) 0px;
+    margin: calc(var(--padding-size) / 2 + 4px) 0px 0 0;
 }
 .features .container .feat p {
     line-height: 1.8;
     color: #777;
-    font-size: 17px;
+    font-size: 1.1rem;
 }
 /* end feat  */
+
+
+
 /* start services */
 .services {
     padding: var(--padding-size) 0px;
